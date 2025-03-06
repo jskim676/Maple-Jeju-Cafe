@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Maplestory font';
+    src: url('../assets/fonts/Maplestory Light.ttf') format('truetype'),
+        url('../assets/fonts/Maplestory OTF Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Maplestory font', sans-serif;
+}

@@ -1,0 +1,43 @@
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.slogan {
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan p {
+    font-size: 14px;
+    color: var(--text-white-color);
+}
+
+@media (max-width: 1024px) {
+    .slogan p {
+    }
+}
+
+@media (max-width: 768px) {
+    .slogan {
+        height: 30px;
+    }
+    .slogan p {
+        font-size: 12px;
+    }
+}
