@@ -1,0 +1,13 @@
+section h2 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.highlightBox {
+    display: inline-block;
+    width: 5px;
+    height: 30px;
+    background-color: var(--primary-color);
+    margin-left: 20px;
+}
