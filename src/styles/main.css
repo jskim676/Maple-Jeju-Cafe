@@ -23,7 +23,7 @@
     top: 0;
     left: 0;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-45%, 0%);
 }
 
 section {
@@ -36,7 +36,7 @@ section {
     display: grid;
     grid-template-columns: repeat(12, 2fr);
     grid-template-rows: auto;
-    gap: 20px; /* 요소 사이 간격 */
+    gap: 20px;
     margin: auto;
 }
 
@@ -98,6 +98,63 @@ section {
     width: 100%;
 }
 
+.lp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.lp-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lp-section img {
+    width: 300px;
+    height: 300px;
+}
+
+.lp-section .lp-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rotating {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.video-section {
+    display: flex;
+    justify-content: space-between;
+}
+.video-section .timeline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-section .timeline ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-section .timeline ul li {
+    text-align: left;
+    line-height: 30px;
+}
+
 @media (max-width: 1024px) {
     .main {
         padding: 0px 50px;
@@ -110,6 +167,12 @@ section {
     }
     .place-container {
         gap: 10px;
+    }
+    .lp-container .lp-section {
+        flex-direction: column;
+    }
+    .video-section {
+        flex-direction: column;
     }
 }
 
@@ -125,5 +188,12 @@ section {
     }
     .place-container {
         gap: 10px;
+    }
+    .lp-container .lp-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .video-section {
+        flex-direction: column;
     }
 }
